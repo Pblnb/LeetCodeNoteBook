@@ -15,6 +15,6 @@ The repository that stores some note during exercising the questions on LeetCode
 + LeetCode.#203 [移除链表元素](./Problems/LeetCode203移除链表元素.md)
 
 + LeetCode.#707 [设计链表](./Problems/LeetCode707设计链表.md)
-+ LeetCode.#206 [反转链表](./Problems/LeetCode206反转链表.md)
 
-  
++ LeetCode.#206 [反转链表](./Problems/LeetCode206反转链表.md)
++ LeetCode.#24 [两两交换链表中的节点](./Problems/LeetCode24两两交换链表中的节点.md)
