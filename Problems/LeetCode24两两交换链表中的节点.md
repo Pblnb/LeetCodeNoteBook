@@ -32,7 +32,7 @@ https://leetcode-cn.com/problems/swap-nodes-in-pairs/
 进阶：你能在不修改链表节点值的情况下解决这个问题吗?（也就是说，仅修改节点本身。）
 ```
 
-## **C++代码**
+## **MyCode**
 
 ### **双指针迭代法**
 
@@ -82,7 +82,9 @@ public:
 - 时间复杂度：$O(n)$
 - 空间复杂度：$O(1)$
 
-### **改进迭代算法**
+## BetterCode
+
+### 改进迭代算法
 
 ```c++
 class Solution {
@@ -150,6 +152,8 @@ public:
 链接：https://leetcode-cn.com/problems/swap-nodes-in-pairs/solution/hua-jie-suan-fa-24-liang-liang-jiao-huan-lian-biao/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+#### 代码
 
 
 ```c++
