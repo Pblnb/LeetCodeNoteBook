@@ -153,7 +153,7 @@ public:
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-#### 代码
+#### 代码:C++
 
 
 ```c++
@@ -174,5 +174,19 @@ public:
 链接：https://leetcode-cn.com/problems/swap-nodes-in-pairs/solution/liang-liang-jiao-huan-lian-biao-zhong-de-jie-di-91/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```
+
+#### 代码:Go
+
+```go
+func swapPairs(head *ListNode) *ListNode {
+    if head == nil || head.Next == nil {
+        return head
+    }
+    next := head.Next
+    head.Next = swapPairs(next.Next)
+    next.Next = head
+    return next
+}
 ```
 
