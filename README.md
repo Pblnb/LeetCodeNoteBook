@@ -47,5 +47,8 @@
   + **我使用的是数组解决,但是感觉不是好方案,Go中感觉使用映射(map)比较合适**,因此重新写了一个map的版本
 + (简单)[LeetCode.#202 快乐数](https://leetcode-cn.com/problems/happy-number/)
   + 比较简单,思路自然,可能的难点在于**取每位的数字**这个循环
++ (简单)[LeetCode.#1 两数之和](https://leetcode-cn.com/problems/two-sum/)
+  + 经典两数之和,暴力方法狗都想得到,在此之前做过因此很自然的想到了哈希表的方法,写的也很顺利,应该没问题了
+
 + **Loading...**
 
