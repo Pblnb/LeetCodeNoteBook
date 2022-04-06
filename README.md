@@ -1,9 +1,11 @@
 # LeetCodeNoteBook
-The repository that stores some note during exercising the questions on LeetCode.com.
+该仓库是LeetCode刷题的笔记,刷题路线参考[代码随想录]([代码随想录 (programmercarl.com)](https://programmercarl.com/)),题目解析参考LeetCode官方的解题以及代码随想录的解析。
 
-**The symbol 'X' before the question's title indicates a problem that can't be solved for the first time**
+**问题标题前的X符号表示第一次不能解决的问题，应该注重复习的题目**
 
 ## Menu
+
+**该部分前一小部分使用C++,后面使用Go(笔记中虽没有,但全部题目都使用Go实现过)**
 
 1. 线性表
 
@@ -35,4 +37,15 @@ The repository that stores some note during exercising the questions on LeetCode
   + **(X)** 题目进阶:要求算法原地运行
     + [解题思路]([环形链表 II（双指针法，清晰图解） - 环形链表 II - 力扣（LeetCode） (leetcode-cn.com)](https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/linked-list-cycle-ii-kuai-man-zhi-zhen-shuang-zhi-/))
     + 思路虽好,但是需要数学运算,真实情况下比较麻烦,借鉴思路即可,该解题思路内总结的也比较好,总结了适用双指针(快慢指针)的几种题型
+
+3. 哈希表
+
++ (简单)[LeetCode.#242 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/)
+  + 比较容易,解法朴素
++ (简单)[LeetCode.#349 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
+  + 也比较简单,代码随想录中总结了集合、数组的优缺点和适用情况
+  + **我使用的是数组解决,但是感觉不是好方案,Go中感觉使用映射(map)比较合适**,因此重新写了一个map的版本
++ (简单)[LeetCode.#202 快乐数](https://leetcode-cn.com/problems/happy-number/)
+  + 比较简单,思路自然,可能的难点在于**取每位的数字**这个循环
++ **Loading...**
 
