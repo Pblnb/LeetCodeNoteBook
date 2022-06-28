@@ -30,7 +30,7 @@
 + (简单) LeetCode.面试题02.07 链表相交
   + 不算太难,但是第一反应的思路和较优思路(指代码随想录)不同,但时间复杂度相同代码也不难写
   + **总结:可以简单回顾回顾**
-  + **==补充:在LeetCode上发现另一个[解题思路]([面试题 02.07. 链表相交（双指针，清晰图解） - 链表相交 - 力扣（LeetCode） (leetcode-cn.com)](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/solution/mian-shi-ti-0207-lian-biao-xiang-jiao-sh-b8hn/))==**
+  + **==补充:在LeetCode上发现另一个[解题思路](https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/solution/mian-shi-ti-0207-lian-biao-xiang-jiao-sh-b8hn/))==**
     + 该思路比较巧妙,也可以看看
 + (中等) LeetCode.#142 环形链表II
   + 问题不难,容易想到偏暴力的算法,但是需要额外空间开销
@@ -77,6 +77,33 @@
 
 + (简单)[剑指 Offer 58 - II. 左旋转字符串 - 力扣（LeetCode）](https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
   + 有了上面的基础就很简单了，在链表中也有类似题，思路一样，都是利用反转（由此可见反转的重要性）
+
++ :star: (简单)[28. 实现 strStr() - 力扣（LeetCode）](https://leetcode.cn/problems/implement-strstr/)
+  + 经典的KMP算法，理论上了解且熟悉，但是代码实现和写题目手算不太一样，具体代码实现需要反复品味品位。
+  + 代码比较简短，但是还是不能硬背，还是要多理解。主要是回退这一步容易搞乱，同时有多种实现方式
+  + 自己掌握的话习惯一种实现方式就可以了：记住==得到前缀表之后统一减1==的方法就可以。注意回退的下标。
+  + ==不变量==：j永远代表前缀的最后一个字符，i永远代表当前正在比较的主字符串字符，j+1则代表当前正在比较的模板字符串中的字符。
+  + ==不变规则==：i表示大字符串中的下标，总是在循环中递增（主字符串不回退）。j的控制(自增或回退)在循环体中在一定条件下操作。
+
++ (**X**)(简单)[459. 重复的子字符串 - 力扣（LeetCode）](https://leetcode.cn/problems/repeated-substring-pattern/)
+  + 利用KMP，保证求出next数组之后最后一个不为-1且 **字符长度**-**Next数组最后一个元素**-**1**可以整除字符串长度即可。具体证明过程看力扣。
+  + 具体证明比较复杂，但是利用例子比较容易看出这个规律。
+
+
+5. 栈和队列
+
++ [232. 用栈实现队列 - 力扣（LeetCode）](https://leetcode.cn/problems/implement-queue-using-stacks/)
+  + 核心思想:利用两个栈(输入栈和输出栈)实现队列
+  + 在Golang中没有内置栈数据结构，使用切片代替模拟即可
++ [225. 用队列实现栈 - 力扣（LeetCode）](https://leetcode.cn/problems/implement-stack-using-queues/)
+  + 核心思想:利用一个队列模拟栈的实现，在模拟移除栈头元素时，只需要将队列中的元素依次出队(除了最后一个元素)，重新加入队尾（或者暂时保存最后更新队列即可）
++ [1047. 删除字符串中的所有相邻重复项 - 力扣（LeetCode）](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/)
+  + 核心思想:类似于"对对碰"或是"祖玛"游戏，利用栈存储前半部分已遍历的字符，此时栈顶元素总是当前已遍历字符的末尾
+  + 当遍历到某字符与栈顶元素相同时，即"对对碰"消除了，此时栈顶元素出栈，新的栈顶元素即代表消除掉重复项之后新的末尾元素，其与下一个未遍历元素继续匹配。
+  + 最后栈中剩下的字符即消除相邻重复项之后的字符，简单处理之后即可得到目标字符串
++ [150. 逆波兰表达式求值 - 力扣（LeetCode）](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
+  + 理论知识比较熟悉了，只是用代码实现了一下。
+  + 核心思想:遇到数字入栈，遇到操作符出栈（注意左右操作符和栈更新即可）
 
 + **Loading...**
 
