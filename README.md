@@ -1,5 +1,5 @@
 # LeetCodeNoteBook
-该仓库是LeetCode刷题的笔记,刷题路线参考[代码随想录]([代码随想录 (programmercarl.com)](https://programmercarl.com/)),题目解析参考LeetCode官方的解题以及代码随想录的解析。
+该仓库是LeetCode刷题的笔记,刷题路线参考[代码随想录](https://programmercarl.com/),题目解析参考LeetCode官方的解题以及代码随想录的解析。
 
 **问题标题前的X符号表示第一次不能解决的问题，应该注重复习的题目**
 
@@ -92,32 +92,32 @@
 
 5. 栈和队列
 
-+ [232. 用栈实现队列 - 力扣（LeetCode）](https://leetcode.cn/problems/implement-queue-using-stacks/)
++ (Easy)[232. 用栈实现队列 - 力扣（LeetCode）](https://leetcode.cn/problems/implement-queue-using-stacks/)
 
   + 核心思想:利用两个栈(输入栈和输出栈)实现队列
   + 在Golang中没有内置栈数据结构，使用切片代替模拟即可
 
-+ [225. 用队列实现栈 - 力扣（LeetCode）](https://leetcode.cn/problems/implement-stack-using-queues/)
++ (Easy)[225. 用队列实现栈 - 力扣（LeetCode）](https://leetcode.cn/problems/implement-stack-using-queues/)
 
   + 核心思想:利用一个队列模拟栈的实现，在模拟移除栈头元素时，只需要将队列中的元素依次出队(除了最后一个元素)，重新加入队尾（或者暂时保存最后更新队列即可）
 
-+ [1047. 删除字符串中的所有相邻重复项 - 力扣（LeetCode）](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/)
++ (Easy)[1047. 删除字符串中的所有相邻重复项 - 力扣（LeetCode）](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/)
 
   + 核心思想:类似于"对对碰"或是"祖玛"游戏，利用栈存储前半部分已遍历的字符，此时栈顶元素总是当前已遍历字符的末尾
   + 当遍历到某字符与栈顶元素相同时，即"对对碰"消除了，此时栈顶元素出栈，新的栈顶元素即代表消除掉重复项之后新的末尾元素，其与下一个未遍历元素继续匹配。
   + 最后栈中剩下的字符即消除相邻重复项之后的字符，简单处理之后即可得到目标字符串
 
-+ [150. 逆波兰表达式求值 - 力扣（LeetCode）](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
++ (Medium)[150. 逆波兰表达式求值 - 力扣（LeetCode）](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
 
   + 理论知识比较熟悉了，只是用代码实现了一下。
   + 核心思想:遇到数字入栈，遇到操作符出栈（注意左右操作符和栈更新即可）
 
-+ [239. 滑动窗口最大值 - 力扣（LeetCode）](https://leetcode.cn/problems/sliding-window-maximum/)
++ (Hard)[239. 滑动窗口最大值 - 力扣（LeetCode）](https://leetcode.cn/problems/sliding-window-maximum/)
 
   + 核心思想: ==单调队列==
   + 使用Golang具体实现的时候可以发现，这些"花里胡哨"的数据结构的实现其实就是选用底层数据结构(一般都是切片)，在其上做封装即可。单调队列只用保证队列中的元素是单调递增或者递减的即可。
 
-+ [347. 前 K 个高频元素 - 力扣（LeetCode）](https://leetcode.cn/problems/top-k-frequent-elements/)
++ (Medium)[347. 前 K 个高频元素 - 力扣（LeetCode）](https://leetcode.cn/problems/top-k-frequent-elements/)
 
   + 核心思想:==优先级队列、小顶堆==
 
@@ -131,6 +131,32 @@
 
     4. Push(x any)
     5. Pop() any
+
+6. 二叉树
+
++ (Easy)[144. 二叉树的前序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
+
+  + 递归方法:写递归算法注意
+
+    1. **确定递归函数的参数和返回值：** 确定哪些参数是递归的过程中需要处理的，那么就在递归函数里加上这个参数， 并且还要明确每次递归的返回值是什么进而确定递归函数的返回类型。
+
+    2. **确定终止条件：** 写完了递归算法, 运行的时候，经常会遇到栈溢出的错误，就是没写终止条件或者终止条件写的不对，操作系统也是用一个栈的结构来保存每一层递归的信息，如果递归没有终止，操作系统的内存栈必然就会溢出。
+
+    3. **确定单层递归的逻辑：** 确定每一层递归需要处理的信息。在这里也就会重复调用自己来实现递归的过程。
+
+  + 迭代方法:利用栈
+
+  + 具体流程：初始情况根节点在栈中，后续循环条件为栈不为空。每次出栈一个元素，分别入栈右孩子、左孩子
+
++ (Easy)[145. 二叉树的后序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
+
+  + 三个遍历都类似
+
++ [145. 二叉树的后序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
+
+  1. 递归
+  2. 普通迭代(此时中序遍历和前、后序遍历处理不同)
+  3. 统一处理的迭代法(标记法)
 
 + **Loading...**
 
