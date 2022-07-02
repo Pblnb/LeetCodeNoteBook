@@ -147,21 +147,43 @@
   + 迭代方法:利用栈
 
   + 具体流程：初始情况根节点在栈中，后续循环条件为栈不为空。每次出栈一个元素，分别入栈右孩子、左孩子
-
 + (Easy)[145. 二叉树的后序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
 
   + 三个遍历都类似
-
 + [145. 二叉树的后序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
 
   1. 递归
   2. 普通迭代(此时中序遍历和前、后序遍历处理不同)
   3. 统一处理的迭代法(标记法)
-
 + [102. 二叉树的层序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-level-order-traversal/)
-
   + 迭代
   + 递归：一开始不知道怎么写递归, 可以再看看
++ [107. 二叉树的层序遍历 II - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/)
+  + 方法1：两个栈+一个队列实现
+  + 方法2：层序遍历后反转
+  
++ [637. 二叉树的层平均值 - 力扣（LeetCode）](https://leetcode.cn/problems/average-of-levels-in-binary-tree/)
+  + 正常遍历, 每层求平均后放入结果切片
 
++ [429. N 叉树的层序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/)
+  + 正常遍历即可, 模板相同
+
++ [515. 在每个树行中找最大值 - 力扣（LeetCode）](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/)
+  + 差不太多
+
++ [116. 填充每个节点的下一个右侧节点指针 - 力扣（LeetCode）](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)
+  + 差不多
+
++ [117. 填充每个节点的下一个右侧节点指针 II - 力扣（LeetCode）](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/)
+  + 和上一题一模一样
+
++ [104. 二叉树的最大深度 - 力扣（LeetCode）](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)
+  + 模板题
+
++ [111. 二叉树的最小深度 - 力扣（LeetCode）](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)
+  + 差不太多, 出了一次提交错误是因为一次需要跳出两个循环（使用label或者直接return解决）
+  + 至此, 层序遍历的题目结束, 一个层序遍历就有以上十种不同的提问方法。
+
++ 
 + **Loading...**
 
