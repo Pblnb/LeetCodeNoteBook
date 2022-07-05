@@ -72,7 +72,7 @@
   + 比较简单，模拟过程中注意边界即可。
 + (简单)[剑指 Offer 05. 替换空格 - 力扣（LeetCode）](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
   + 比较简单，纠结了半天怎么原地运行，不带来任何额外的空间开销，但是由于Go语法中区分string和[]byte，因此只能创建一个变量用于接收切片。如果硬要只用string不用[]byte的话反而会很麻烦，得不偿失。
-+ **==X==**(中等)[151. 颠倒字符串中的单词 - 力扣（LeetCode）](https://leetcode.cn/problems/reverse-words-in-a-string/)
++ **X**(中等)[151. 颠倒字符串中的单词 - 力扣（LeetCode）](https://leetcode.cn/problems/reverse-words-in-a-string/)
   + 这题是上面三道题的综合，第一次做的时候想不出来原地的方法...
 
 + (简单)[剑指 Offer 58 - II. 左旋转字符串 - 力扣（LeetCode）](https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
@@ -161,33 +161,39 @@
 + (Medium)[107. 二叉树的层序遍历 II - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/)
   + 方法1：两个栈+一个队列实现
   + 方法2：层序遍历后反转
++ (Easy)[199. 二叉树的右视图 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-right-side-view/)
+  + 层序遍历
   
 + (Easy)[637. 二叉树的层平均值 - 力扣（LeetCode）](https://leetcode.cn/problems/average-of-levels-in-binary-tree/)
   + 正常遍历, 每层求平均后放入结果切片
-
 + (Medium)[429. N 叉树的层序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/)
   + 正常遍历即可, 模板相同
-
 + (Medium)[515. 在每个树行中找最大值 - 力扣（LeetCode）](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/)
   + 差不太多
-
 + (Medium)[116. 填充每个节点的下一个右侧节点指针 - 力扣（LeetCode）](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)
   + 差不多
-
 + (Medium)[117. 填充每个节点的下一个右侧节点指针 II - 力扣（LeetCode）](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/)
   + 和上一题一模一样
-
 + (Easy)[104. 二叉树的最大深度 - 力扣（LeetCode）](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)
-  + 模板题
+  + 使用层序遍历实现迭代方法
+  + 使用后序遍历实现递归方法
++ (Easy)[559. N 叉树的最大深度 - 力扣（LeetCode）](https://leetcode.cn/problems/maximum-depth-of-n-ary-tree/)
+  + 同上
 
 + (Easy)[111. 二叉树的最小深度 - 力扣（LeetCode）](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)
   + 差不太多, 出了一次提交错误是因为一次需要跳出两个循环（使用label或者直接return解决）
   + 至此, 层序遍历的题目结束, 一个层序遍历就有以上十种不同的提问方法。
-
 + (Easy)[226. 翻转二叉树 - 力扣（LeetCode）](https://leetcode.cn/problems/invert-binary-tree/)
   + 深度优先遍历（中序比较特殊）
   + 广度优先遍历（层序遍历）
   + **总体来说还是比较简单的**
++ (Easy)[101. 对称二叉树 - 力扣（LeetCode）](https://leetcode.cn/problems/symmetric-tree/)
+  + 递归(将镜像的结点传入递归函数)
+  + 迭代
 
++ (Easy)[559. N 叉树的最大深度 - 力扣（LeetCode）](https://leetcode.cn/problems/maximum-depth-of-n-ary-tree/)
+  + 层序遍历
+
++ 
 + **Loading...**
 
