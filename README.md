@@ -147,53 +147,101 @@
   + 迭代方法:利用栈
 
   + 具体流程：初始情况根节点在栈中，后续循环条件为栈不为空。每次出栈一个元素，分别入栈右孩子、左孩子
+  
 + (Easy)[145. 二叉树的后序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
 
   + 三个遍历都类似
+  
 + (Easy)[145. 二叉树的后序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
 
   1. 递归
   2. 普通迭代(此时中序遍历和前、后序遍历处理不同)
   3. 统一处理的迭代法(标记法)
+  
 + (Medium)[102. 二叉树的层序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-level-order-traversal/)
   + 迭代
   + 递归：一开始不知道怎么写递归, 可以再看看
+  
 + (Medium)[107. 二叉树的层序遍历 II - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/)
   + 方法1：两个栈+一个队列实现
   + 方法2：层序遍历后反转
+  
 + (Easy)[199. 二叉树的右视图 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-right-side-view/)
+  
   + 层序遍历
   
 + (Easy)[637. 二叉树的层平均值 - 力扣（LeetCode）](https://leetcode.cn/problems/average-of-levels-in-binary-tree/)
   + 正常遍历, 每层求平均后放入结果切片
+
 + (Medium)[429. N 叉树的层序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/)
   + 正常遍历即可, 模板相同
+
 + (Medium)[515. 在每个树行中找最大值 - 力扣（LeetCode）](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/)
   + 差不太多
+
 + (Medium)[116. 填充每个节点的下一个右侧节点指针 - 力扣（LeetCode）](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)
   + 差不多
+
 + (Medium)[117. 填充每个节点的下一个右侧节点指针 II - 力扣（LeetCode）](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/)
   + 和上一题一模一样
+
 + (Easy)[104. 二叉树的最大深度 - 力扣（LeetCode）](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)
   + 使用层序遍历实现迭代方法
   + 使用后序遍历实现递归方法
+
 + (Easy)[559. N 叉树的最大深度 - 力扣（LeetCode）](https://leetcode.cn/problems/maximum-depth-of-n-ary-tree/)
+
   + 同上
 
 + (Easy)[111. 二叉树的最小深度 - 力扣（LeetCode）](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)
   + 差不太多, 出了一次提交错误是因为一次需要跳出两个循环（使用label或者直接return解决）
   + 至此, 层序遍历的题目结束, 一个层序遍历就有以上十种不同的提问方法。
+
 + (Easy)[226. 翻转二叉树 - 力扣（LeetCode）](https://leetcode.cn/problems/invert-binary-tree/)
   + 深度优先遍历（中序比较特殊）
   + 广度优先遍历（层序遍历）
   + **总体来说还是比较简单的**
+
 + (Easy)[101. 对称二叉树 - 力扣（LeetCode）](https://leetcode.cn/problems/symmetric-tree/)
+
   + 递归(将镜像的结点传入递归函数)
   + 迭代
 
 + (Easy)[559. N 叉树的最大深度 - 力扣（LeetCode）](https://leetcode.cn/problems/maximum-depth-of-n-ary-tree/)
+
   + 层序遍历
 
-+ 
++ (Easy)[111. 二叉树的最小深度 - 力扣（LeetCode）](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)
+
+  + 递归：注意有坑，如果像最大深度差不多的方法处理的话会导致错误。需要判断左右子树其中一个为空的情况。如：若左子树为空那么最小深度应该为1+右子树的最小深度
+  + 迭代：层序遍历，在找到叶子结点后退出大循环（或者直接return）即可
+
++ (Medium)[222. 完全二叉树的节点个数 - 力扣（LeetCode）](https://leetcode.cn/problems/count-complete-tree-nodes/)
+
+  + 递归:递归时将左右子树结点相加后加1(结点自身)即可
+
+  + 半递归：利用了完全二叉树的特性。
+
+    当二叉树为满二叉树时直接利用公式计算
+    当二叉树不是满二叉树时，递归左右结点直到找到满二叉树
+
++ (Medium)[110. 平衡二叉树 - 力扣（LeetCode）](https://leetcode.cn/problems/balanced-binary-tree/)
+
+  + 递归:递归比迭代简单多了, 注意单层递归逻辑
+
+    如果当前结点不平衡了就返回-1。若其中一个子树返回了-1, 当前结点也直接返回-1。然后才开始比较左右子树高度差...
+
+  + 迭代:要计算高度, 所以是后序遍历。直到迭代的方法就可以, 实现比较繁琐。
+
++ (Easy)[257. 二叉树的所有路径 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-paths/)
+
+  + 递归:**这次递归算法是完全自己想出来的**和代码随想录中方法有一定不同
+
+    我的思路是遍历到nil结点才返回, 因此叶子结点依旧可以完成单层的遍历逻辑, 因此可以负责自己的**回溯**
+
+    代码随想录中的思想是遍历到叶子结点就返回, 因此叶子结点不能完成单层遍历逻辑, 回溯需要在上一层函数中完成, 因此有一个**"递归-回溯"**严格的一一对应关系
+
+    最重要的区别在于：我的思路中叶子结点的逻辑和非叶子结点逻辑相同, 对于递归变量可以做到**自产自销**, 但是代码随想录中的方法叶子结点无法消除自己对于变量的影响, 因此叶子结点无法完成回溯, 因此统一把回溯放到上层递归函数中完成。即一个是自己加入一个元素后自己取出该元素。另一种是自己放入的元素是由上一层递归函数替你取出来的。 
+
 + **Loading...**
 
