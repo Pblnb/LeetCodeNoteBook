@@ -276,5 +276,31 @@
   + **解决方案**:查看LeetCode官方的Golang题解, 利用全局变量和闭包的方式来解决（不过依旧是拷贝）。
   + **反思**:在golang中涉及到引用对象还是默认它们的地址相同, 会发生变量覆盖的问题好了。但是slice比较特殊, 如果希望其完全保持引用对象的特性, 还是使用指针吧!
 
++ (Medium)[106. 从中序与后序遍历序列构造二叉树 - 力扣（LeetCode）](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
+
+  + 递归, 关键在于找中序后序左右子序列
+  
++ (Medium)[105. 从前序与中序遍历序列构造二叉树 - 力扣（LeetCode）](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+
+  + 同上
+
++ (Medium)[654. 最大二叉树 - 力扣（LeetCode）](https://leetcode.cn/problems/maximum-binary-tree/)
+
+  + 递归逻辑很清晰,  比较简单
+
++ (Easy)[617. 合并二叉树 - 力扣（LeetCode）](https://leetcode.cn/problems/merge-two-binary-trees/)
+
+  + 递归, 比较简单
+
++ (Easy)[700. 二叉搜索树中的搜索 - 力扣（LeetCode）](https://leetcode.cn/problems/search-in-a-binary-search-tree/)
+
+  + 递归, 简单
+
++ :star:(Medium)[98. 验证二叉搜索树 - 力扣（LeetCode）](https://leetcode.cn/problems/validate-binary-search-tree/)
+
+  + 方法一: 通过中序遍历, 得到中序序列后判断序列是否为严格递增
+  + 方法二: 由于二叉搜索树的中序遍历序列是严格递增的, 因此在遍历中可以直接判断是否为二叉搜索树, 具体来说在遍历中通过全局变量记录遍历的上一个结点, 判断当前结点值是否大于上一个结点值
+  + **方法三**：在递归中限制区间, 判断当前结点值是否在区间中, 并且在递归中不断缩小该区间, 即递归到左子树时, 区间最大值应变为该节点值, 递归到右子树时, 区间最小值变为该节点值. (这个思路可以体现搜索树的搜索的过程) 
+
 + **Loading...**
 
