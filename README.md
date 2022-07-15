@@ -302,5 +302,42 @@
   + 方法二: 由于二叉搜索树的中序遍历序列是严格递增的, 因此在遍历中可以直接判断是否为二叉搜索树, 具体来说在遍历中通过全局变量记录遍历的上一个结点, 判断当前结点值是否大于上一个结点值
   + **方法三**：在递归中限制区间, 判断当前结点值是否在区间中, 并且在递归中不断缩小该区间, 即递归到左子树时, 区间最大值应变为该节点值, 递归到右子树时, 区间最小值变为该节点值. (这个思路可以体现搜索树的搜索的过程) 
 
++ (Easy)[530. 二叉搜索树的最小绝对差 - 力扣（LeetCode）](https://leetcode.cn/problems/minimum-absolute-difference-in-bst/)
+
+  + 利用二叉搜索树中序遍历有序的特性
+
++ (Easy)[501. 二叉搜索树中的众数 - 力扣（LeetCode）](https://leetcode.cn/problems/find-mode-in-binary-search-tree/)
+
+  + 利用二叉搜索树的特性
+
++ :star: (Medium)[236. 二叉树的最近公共祖先 - 力扣（LeetCode）](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)
+
+  + 方法一: 第一反应. 递归得到两个节点的路径 :arrow_right: 比较返回两个结点最后的重合结点
+  + :star2: **方法二**:递归, 后序遍历直接得到结果
+
++ :star:[235. 二叉搜索树的最近公共祖先 - 力扣（LeetCode）](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+
+  + 方法一: 和二叉树的方法相同, 但没有利用二叉搜索树的特性
+
+  + 方法二: 二叉搜索树的最近公共祖先就是大于等于其中小的结点, 小于等于其中大的结点的结点。即
+
+    ```go
+    // min为p, q中小的值, max为p, q中大的值
+    若 cur.Val >= min && cur.Val <= max {
+      则 cur 就是p, q的最近公共祖先
+    }
+    且由于二叉搜索树有序, 可以通过区间判断接下来遍历的方向, 即
+    // 实际实现中可以不比大小, 直接判断cur.Val是否大于两个值或小于两个值
+    若 cur.Val > max {
+      遍历左节点
+    } 若 cur.Val < min {
+      遍历右节点
+    }
+    ```
+
+    
+
+    
+
 + **Loading...**
 
