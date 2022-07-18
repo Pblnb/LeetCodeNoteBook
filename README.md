@@ -335,9 +335,26 @@
     }
     ```
 
-    
++ (Medium)[701. 二叉搜索树中的插入操作 - 力扣（LeetCode）](https://leetcode.cn/problems/insert-into-a-binary-search-tree/)
 
-    
+  + 递归, 找到空节点插入。
+
++ :red_circle: (Medium)[450. 删除二叉搜索树中的节点 - 力扣（LeetCode）](https://leetcode.cn/problems/delete-node-in-a-bst/)
+
+  + 递归, 但是需要判断五种情况, 情况比较多, 需要想清楚, 尤其是第五种情况
+
++ (Medium)[669. 修剪二叉搜索树 - 力扣（LeetCode）](https://leetcode.cn/problems/trim-a-binary-search-tree/)
+
+  + 递归, 自己做出来了, 逻辑还算清晰
+
++ (Easy)[108. 将有序数组转换为二叉搜索树 - 力扣（LeetCode）](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/)
+
+  + 递归, 逻辑比较清晰, 代码很精简
+  + 思路: 把中间的数字作为数值返回, 左孩子为使用左半部分得到的二叉平衡树, 右孩子为使用右半部分得到的二叉平衡树
+
++ (Medium)[538. 把二叉搜索树转换为累加树 - 力扣（LeetCode）](https://leetcode.cn/problems/convert-bst-to-greater-tree/)
+
+  + 递归, 利用右中左的顺序遍历二叉搜索树可以得到一个逆序排列的数组, 因此用这个顺序遍历就可以得到大于等于某结点值的所有值的累加值。
 
 + **Loading...**
 
