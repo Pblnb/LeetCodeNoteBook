@@ -355,6 +355,23 @@
 
 ## 7. 回溯算法
 
++ (Medium)[77. 组合 - 力扣（LeetCode）](https://leetcode.cn/problems/combinations/)
+
+  + 回溯方法, 逻辑还是比较清晰的
+
+  + 由于过程中出现了切片覆盖的问题, 这里回顾一下
+
+    ```go
+    path := []int{}
+    res := [][]int{}
+    // 省略处理过程
+    ...
+    // 添加结果(错误方法)
+    res = append(res, path) //这里直接把切片加入结果切片中, 会导致后续path变化的时候res中的值也发生变化
+    // 正确方法
+    res = append(res, append([]int{}, path...)) // 正确方法, 主要就是生成一个新的切片对象存储结果, 利用...语法糖快速实现切片复制
+    ```
+
 + 
 
 + **Loading...**
