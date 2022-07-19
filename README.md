@@ -3,11 +3,9 @@
 
 **问题标题前的X符号表示第一次不能解决的问题，应该注重复习的题目**
 
-## Menu
-
 **该部分前一小部分使用C++,后面使用Go(笔记中虽没有,但全部题目都使用Go实现过)**
 
-1. 线性表
+## 1. 线性表
 
 + (简单) LeetCode#1 [两数之和](./Problems/LeetCode1两数之和.md)
 + (简单) LeetCode#27 [移除元素](./Problems/LeetCode27移除元素.md)
@@ -16,7 +14,7 @@
 + (简单) LeetCode#977 [有序数组的平方](./Problems/LeetCode977有序数组的平方.md)
 + X (中等) LeetCode#209 [长度最小的子数组](./Problems/LeetCode209长度最小的子数组.md)
 
-2. 链表
+## 2. 链表
 
 + (简单) LeetCode.#203 [移除链表元素](./Problems/LeetCode203移除链表元素.md)
 + (中等) LeetCode.#707 [设计链表](./Problems/LeetCode707设计链表.md)
@@ -38,7 +36,7 @@
     + [解题思路]([环形链表 II（双指针法，清晰图解） - 环形链表 II - 力扣（LeetCode） (leetcode-cn.com)](https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/linked-list-cycle-ii-kuai-man-zhi-zhen-shuang-zhi-/))
     + 思路虽好,但是需要数学运算,真实情况下比较麻烦,借鉴思路即可,该解题思路内总结的也比较好,总结了适用双指针(快慢指针)的几种题型
 
-3. 哈希表
+## 3. 哈希表
 
 + (简单)[242. 有效的字母异位词 - 力扣（LeetCode）](https://leetcode.cn/problems/valid-anagram/)
   + 比较容易,解法朴素
@@ -63,8 +61,7 @@
 + (中等)[18. 四数之和 - 力扣（LeetCode）](https://leetcode.cn/problems/4sum/)
   + 想复杂了，没想到只是加了一层循环。此类问题往后延伸也都是加一层循环，注意与[454. 四数相加 II - 力扣（LeetCode）](https://leetcode.cn/problems/4sum-ii/)区分
 
-
-4. 字符串
+## 4. 字符串
 
 + (简单)[344. 反转字符串 - 力扣（LeetCode）](https://leetcode.cn/problems/reverse-string/)
   + 简单。
@@ -89,8 +86,7 @@
   + 利用KMP，保证求出next数组之后最后一个不为-1且 **字符长度**-**Next数组最后一个元素**-**1**可以整除字符串长度即可。具体证明过程看力扣。
   + 具体证明比较复杂，但是利用例子比较容易看出这个规律。
 
-
-5. 栈和队列
+## 5. 栈和队列
 
 + (Easy)[232. 用栈实现队列 - 力扣（LeetCode）](https://leetcode.cn/problems/implement-queue-using-stacks/)
 
@@ -132,7 +128,7 @@
     4. Push(x any)
     5. Pop() any
 
-6. 二叉树
+## 6. 二叉树
 
 + (Easy)[144. 二叉树的前序遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
 
@@ -355,6 +351,11 @@
 + (Medium)[538. 把二叉搜索树转换为累加树 - 力扣（LeetCode）](https://leetcode.cn/problems/convert-bst-to-greater-tree/)
 
   + 递归, 利用右中左的顺序遍历二叉搜索树可以得到一个逆序排列的数组, 因此用这个顺序遍历就可以得到大于等于某结点值的所有值的累加值。
+
+
+## 7. 回溯算法
+
++ 
 
 + **Loading...**
 
