@@ -12,7 +12,7 @@
 + (简单) LeetCode#704 [二分查找](./Problems/LeetCode704二分查找.md)
 + (中等) LeetCode#59 [螺旋矩阵II](./Problems/LeetCode59螺旋矩阵II.md)
 + (简单) LeetCode#977 [有序数组的平方](./Problems/LeetCode977有序数组的平方.md)
-+ X (中等) LeetCode#209 [长度最小的子数组](./Problems/LeetCode209长度最小的子数组.md)
++ :x: (中等) LeetCode#209 [长度最小的子数组](./Problems/LeetCode209长度最小的子数组.md)
 
 ## 2. 链表
 
@@ -32,7 +32,7 @@
     + 该思路比较巧妙,也可以看看
 + (中等) LeetCode.#142 环形链表II
   + 问题不难,容易想到偏暴力的算法,但是需要额外空间开销
-  + **(==X==)** 题目进阶:要求算法原地运行
+  + :x: 题目进阶:要求算法原地运行
     + [解题思路]([环形链表 II（双指针法，清晰图解） - 环形链表 II - 力扣（LeetCode） (leetcode-cn.com)](https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/linked-list-cycle-ii-kuai-man-zhi-zhen-shuang-zhi-/))
     + 思路虽好,但是需要数学运算,真实情况下比较麻烦,借鉴思路即可,该解题思路内总结的也比较好,总结了适用双指针(快慢指针)的几种题型
 
@@ -69,7 +69,7 @@
   + 比较简单，模拟过程中注意边界即可。
 + (简单)[剑指 Offer 05. 替换空格 - 力扣（LeetCode）](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
   + 比较简单，纠结了半天怎么原地运行，不带来任何额外的空间开销，但是由于Go语法中区分string和[]byte，因此只能创建一个变量用于接收切片。如果硬要只用string不用[]byte的话反而会很麻烦，得不偿失。
-+ **X**(中等)[151. 颠倒字符串中的单词 - 力扣（LeetCode）](https://leetcode.cn/problems/reverse-words-in-a-string/)
++ :x:(中等)[151. 颠倒字符串中的单词 - 力扣（LeetCode）](https://leetcode.cn/problems/reverse-words-in-a-string/)
   + 这题是上面三道题的综合，第一次做的时候想不出来原地的方法...
 
 + (简单)[剑指 Offer 58 - II. 左旋转字符串 - 力扣（LeetCode）](https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
@@ -82,7 +82,7 @@
   + ==不变量==：j永远代表前缀的最后一个字符，i永远代表当前正在比较的主字符串字符，j+1则代表当前正在比较的模板字符串中的字符。
   + ==不变规则==：i表示大字符串中的下标，总是在循环中递增（主字符串不回退）。j的控制(自增或回退)在循环体中在一定条件下操作。
 
-+ (**X**)(简单)[459. 重复的子字符串 - 力扣（LeetCode）](https://leetcode.cn/problems/repeated-substring-pattern/)
++ **:x:**(简单)[459. 重复的子字符串 - 力扣（LeetCode）](https://leetcode.cn/problems/repeated-substring-pattern/)
   + 利用KMP，保证求出next数组之后最后一个不为-1且 **字符长度**-**Next数组最后一个元素**-**1**可以整除字符串长度即可。具体证明过程看力扣。
   + 具体证明比较复杂，但是利用例子比较容易看出这个规律。
 
@@ -379,6 +379,14 @@
 + (Medium)[17. 电话号码的字母组合 - 力扣（LeetCode）](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)
 
   + 回溯
+
++ (Medium)[39. 组合总和 - 力扣（LeetCode）](https://leetcode.cn/problems/combination-sum/)
+
+  + 常规的回溯
+
++ :x:(Medium)[40. 组合总和 II - 力扣（LeetCode）](https://leetcode.cn/problems/combination-sum-ii/)
+
+  + 这题涉及到去重, 是组合总和中最难的一题, 第一反应想不到解法
 
 + **Loading...**
 
