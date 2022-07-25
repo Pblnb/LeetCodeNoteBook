@@ -388,5 +388,9 @@
 
   + 这题涉及到去重, 是组合总和中最难的一题, 第一反应想不到解法
 
++ :x:(Medium)[131. 分割回文串 - 力扣（LeetCode）](https://leetcode.cn/problems/palindrome-partitioning/)
+
+  + 一开始不清楚怎么使用回溯法, 其实就是不知道该用怎么样的顺序去切割字符串
+
 + **Loading...**
 
